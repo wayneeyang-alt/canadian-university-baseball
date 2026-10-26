@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 14: October 26, 2026
+
+- McGill: Matthew Baici's year shown as Grad (graduate student).
+
 ## Version 13: October 26, 2026
 
 - McGill: added Matthew Baici's hometown and previous school.
