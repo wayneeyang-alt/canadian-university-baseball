@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 28: October 27, 2026
+
+- McGill: Robert Glusker's positions updated to C/2B.
+
 ## Version 27: October 27, 2026
 
 - McGill: Nathaniel Steffler's positions updated to C/3B/2B.
