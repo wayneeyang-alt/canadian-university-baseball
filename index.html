@@ -64,6 +64,9 @@ mark{background:var(--hl);color:inherit;padding:0 1px}
 .addl:not(.btn):not(.fix):hover{border-bottom-style:solid}
 .btn{font-size:14px;font-weight:600;color:var(--bg);background:var(--accent);padding:8px 14px;border-radius:3px;border:0;text-decoration:none}
 .btn:hover{filter:brightness(1.1)}
+.btn2{font:600 14px var(--sans,inherit);color:var(--accent);background:transparent;border:1px solid var(--accent);padding:7px 12px;border-radius:3px;cursor:pointer}
+.btn2:hover{background:var(--accent);color:var(--bg)}
+@media(max-width:640px){.bar{position:static}}
 .fix{margin-left:8px;font-size:13px;opacity:.35;border:0!important;text-decoration:none}
 .row:hover .fix,.fix:focus-visible{opacity:1}
 @media (hover:none){.fix{opacity:.8}}
@@ -99,6 +102,7 @@ mark{background:var(--hl);color:inherit;padding:0 1px}
   <select id="team" aria-label="Filter by program"><option value="">All programs</option></select>
   <select id="grp" aria-label="Group players by"><option value="Team">Group by program</option><option value="Home">Group by hometown</option><option value="Previous School">Group by previous school</option><option value="Club Team">Group by club team</option><option value="">No grouping</option></select>
   <div class="count" id="count" aria-live="polite"></div>
+  <button type="button" id="share" class="btn2">Share</button><button type="button" id="csv" class="btn2">Download CSV</button>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="btn addl">Suggest a change</a>
 </div></div>
 <main class="wrap">
@@ -109,7 +113,7 @@ mark{background:var(--hl);color:inherit;padding:0 1px}
   <div class="note">
     <div class="legend"><span><i class="dot g"></i>Named in a Fall 2026 game report</span><span><i class="dot"></i>Listed on the team roster</span></div>
     <div>We did our best to publish only details in which we had a high degree of confidence. We are sure that inevitably there are errors. Please help us improve this database. Where you see <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="addl">+ add</a>, we do not have a confirmed answer yet. If you know a player's club or travel team, previous school or hometown, tell us and we will check it against a source. A dash means a detail we do not collect or have not confirmed.</div>
-    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 21</a>. Last revised Oct 26, 2026.</div>
+    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 22</a>. Last revised Oct 26, 2026.</div>
   </div>
 </main>
 <script>
@@ -184,14 +188,38 @@ function render(){
     const one=Object.keys(by).filter(x=>x&&by[x].length===1).sort((x,y)=>lab[x].localeCompare(lab[y]));
     h=keys.map(x=>`<div class="grp"><h2>${esc(lab[x])}</h2><span>${by[x].length} players</span></div>`+by[x].map(r=>row(r,true)).join("")).join("");
     const rest=[].concat(...one.map(x=>by[x]));
-    if(rest.length)h+=`<div class="grp"><h2>Only one player listed</h2><span>${rest.length} players</span></div>`+rest.map(r=>row(r,true)).join("");
-    if(by[""])h+=`<div class="grp"><h2>Not listed yet</h2><span>${by[""].length} players</span></div><div class="missing">Know one of these? Use + add on a row or <a href="${FORM}" target="_blank" rel="noopener" class="addl">suggest a change</a>.</div>`;
+    if(rest.length)h+=`<div class="grp"><h2>Only one player listed</h2><span>${rest.length} ${rest.length===1?"player":"players"}</span></div>`+rest.map(r=>row(r,true)).join("");
+    if(by[""])h+=`<div class="grp"><h2>Not listed yet</h2><span>${by[""].length} ${by[""].length===1?"player":"players"}</span></div><div class="missing">Know one of these? Use + add on a row or <a href="${FORM}" target="_blank" rel="noopener" class="addl">suggest a change</a>.</div>`;
   } else if($("grp").value==="Team"){
     const by={};rows.forEach(r=>(by[r.Team]=by[r.Team]||[]).push(r));
-    h=Object.keys(by).sort().map(t=>`<div class="grp"><h2>${esc(t)}</h2><span>${by[t].length} players</span></div>`+by[t].map(r=>row(r,false)).join("")+`<div class="missing">Missing a ${esc(t)} player? <a href="${FORM}" target="_blank" rel="noopener" class="addl">+ add a player</a></div>`).join("");
+    h=Object.keys(by).sort().map(t=>`<div class="grp"><h2>${esc(t)}</h2><span>${by[t].length} ${by[t].length===1?"player":"players"}</span></div>`+by[t].map(r=>row(r,false)).join("")+`<div class="missing">Missing a ${esc(t)} player? <a href="${FORM}" target="_blank" rel="noopener" class="addl">+ add a player</a></div>`).join("");
   } else h=rows.map(r=>row(r,true)).join("");
   $("body").innerHTML=h;
+  syncURL();
 }
+
+(function(){
+  const P=new URLSearchParams(location.search);
+  if(P.get("q")){$("q").value=P.get("q");term=P.get("q").trim()}
+  if(P.get("team")&&teams.includes(P.get("team")))$("team").value=P.get("team");
+  if(P.has("group")&&[...$("grp").options].some(o=>o.value===P.get("group")))$("grp").value=P.get("group");
+  if(P.get("sort")&&COLS.some(c=>c[0]===P.get("sort")))sort={k:P.get("sort"),d:P.get("dir")==="desc"?-1:1};
+})();
+function viewURL(){const p=new URLSearchParams();if(term)p.set("q",term);if($("team").value)p.set("team",$("team").value);
+  if($("grp").value!=="Team")p.set("group",$("grp").value);if(sort.k!=="Player"||sort.d<0){p.set("sort",sort.k);if(sort.d<0)p.set("dir","desc")}
+  const s=p.toString();return location.origin+location.pathname+(s?"?"+s:"")}
+function syncURL(){try{history.replaceState(null,"",viewURL())}catch(e){}}
+$("share").addEventListener("click",async()=>{const u=viewURL(),b=$("share");
+  try{if(navigator.share){await navigator.share({title:document.title,url:u});return}}catch(e){if(e&&e.name==="AbortError")return}
+  let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){const ta=document.createElement("textarea");ta.value=u;document.body.appendChild(ta);ta.select();try{ok=document.execCommand("copy")}catch(_){}ta.remove()}
+  b.textContent=ok?"Link copied":"Copy: "+u;setTimeout(()=>b.textContent="Share",ok?2000:6000)});
+$("csv").addEventListener("click",()=>{const lc=term.toLowerCase(),team=$("team").value;
+  const rows=DATA.filter(r=>(!team||r.Team===team)&&(!lc||[r.Player,r.Home,r["Previous School"],r["Club Team"],r.Position,r.Team].some(v=>(v||"").toLowerCase().includes(lc))));
+  const H=["Program","Player","Jersey","Position","Year","Hometown","Prov/State/Country","Previous school","Club team","Roster evidence"];
+  const q=v=>'"'+String(v==null?"":v).replace(/"/g,'""')+'"';
+  const out=[H.map(q).join(",")].concat(rows.map(r=>[r.Team,r.Player,r["Jersey #"],r.Position,r["Eligibility / Yr"],r.Hometown,r["Province / State / Country"],r["Previous School"],r["Club Team"],r.Status].map(q).join(","))).join("\r\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+out],{type:"text/csv;charset=utf-8"}));
+  a.download="canadian-university-baseball-fall-2026.csv";document.body.appendChild(a);a.click();a.remove()});
 render();
 </script>
 

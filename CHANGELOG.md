@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 22: October 26, 2026
+
+- Added a Share button (copies a link that keeps your current search, program, grouping and sort) and a Download CSV button (the players in the current view).
+
 ## Version 21: October 26, 2026
 
 - Display: confirmed name variants of the same school or club now group together (Kitchener-Waterloo KCI, Waterloo CI, Holy Trinity Oakville, Michael Power-St. Joseph, St. Joan of Arc Barrie, St. Michael's College School, Team Crush Baseball). Each was checked against official school, board or club pages. One Holy Trinity entry could not be matched to a specific school and stays separate.
