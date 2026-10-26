@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 26: October 27, 2026
+
+- Added details submitted through the suggestion form: Nathaniel Steffler (McGill) clubs and Josh Lang (Carleton) hometown and previous school. Thank you to everyone who sends corrections.
+
 ## Version 25: October 27, 2026
 
 - "suggest fix" now uses the page's regular text font so the spacing looks natural.
