@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 20: October 26, 2026
+
+- Display: school type names are standardized so spelling variants group together (SS, CSS, CI, CHS, DSS, HS). School names themselves are unchanged.
+
 ## Version 19: October 26, 2026
 
 - Display: high schools are now written "HS" throughout (for example, Leaside HS), so spelling variants group together.
