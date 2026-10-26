@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 18: October 26, 2026
+
+- McGill: added Michael Zampardi's previous school.
+
 ## Version 17: October 26, 2026
 
 - McGill: added Owen Wong's position, previous school and club team.
