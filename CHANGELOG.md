@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 4: October 26, 2026
+
+- McGill: added Sri Paturi's position, hometown and previous school.
+
 ## Version 3: October 26, 2026
 
 - Added a "Group by" menu: group players by program, hometown, previous school or club team to see who shares a school or club across programs.
