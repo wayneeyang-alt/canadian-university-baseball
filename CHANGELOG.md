@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 25: October 27, 2026
+
+- "suggest fix" now uses the page's regular text font so the spacing looks natural.
+
 ## Version 24: October 27, 2026
 
 - Replaced the pencil icon beside each player with a visible "suggest fix" link.
