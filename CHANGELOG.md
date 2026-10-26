@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 17: October 26, 2026
+
+- McGill: added Owen Wong's position, previous school and club team.
+
 ## Version 16: October 26, 2026
 
 - McGill: added Andrew Mueller's position and club team.
