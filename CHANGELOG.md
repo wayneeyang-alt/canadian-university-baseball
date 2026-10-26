@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 6: October 26, 2026
+
+- McGill: added Sri Paturi's and Keane Santos's year (Yr 1).
+
 ## Version 5: October 26, 2026
 
 - McGill: added Keane Santos's position, hometown and previous school.
