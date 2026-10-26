@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 3: October 26, 2026
+
+- Added a "Group by" menu: group players by program, hometown, previous school or club team to see who shares a school or club across programs.
+
 ## Version 2: October 26, 2026
 
 McGill update from a second research pass.
