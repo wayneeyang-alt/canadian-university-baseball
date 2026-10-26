@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 21: October 26, 2026
+
+- Display: confirmed name variants of the same school or club now group together (Kitchener-Waterloo KCI, Waterloo CI, Holy Trinity Oakville, Michael Power-St. Joseph, St. Joan of Arc Barrie, St. Michael's College School, Team Crush Baseball). Each was checked against official school, board or club pages. One Holy Trinity entry could not be matched to a specific school and stays separate.
+
 ## Version 20: October 26, 2026
 
 - Display: school type names are standardized so spelling variants group together (SS, CSS, CI, CHS, DSS, HS). School names themselves are unchanged.
