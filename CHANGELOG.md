@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 23: October 27, 2026
+
+- Removed the Download CSV button. The Share button stays.
+
 ## Version 22: October 26, 2026
 
 - Added a Share button (copies a link that keeps your current search, program, grouping and sort) and a Download CSV button (the players in the current view).
