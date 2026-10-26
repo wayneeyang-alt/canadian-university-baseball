@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 11: October 26, 2026
+
+- McGill: added Vincent Douville's previous school (Dawson College).
+
 ## Version 10: October 26, 2026
 
 - McGill: added Vincent Douville's position (OF).
