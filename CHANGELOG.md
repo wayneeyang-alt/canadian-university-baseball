@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 19: October 26, 2026
+
+- Display: high schools are now written "HS" throughout (for example, Leaside HS), so spelling variants group together.
+
 ## Version 18: October 26, 2026
 
 - McGill: added Michael Zampardi's previous school.
