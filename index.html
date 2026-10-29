@@ -106,7 +106,7 @@ nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-co
   <div class="stats" id="stats"></div>
 </div></header>
 <div class="wrap"><div class="stitch"></div></div>
-<nav class="tabs" aria-label="Pages"><div class="wrap"><a href="./" aria-current="page">Players</a><a href="./teams.html">Teams</a></div></nav>
+<nav class="tabs" aria-label="Pages"><div class="wrap"><a href="./" aria-current="page">Players</a><a href="./teams.html">Teams</a><a href="./clubs.html">Clubs</a></div></nav>
 <div class="bar"><div class="wrap">
   <input id="q" type="search" placeholder="Search player, hometown, school, club" aria-label="Search players" autocomplete="off">
   <select id="team" aria-label="Filter by program"><option value="">All programs</option></select>
@@ -124,7 +124,7 @@ nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-co
     <div class="legend"><span><i class="dot g"></i>Named in a Fall 2026 game report</span><span><i class="dot"></i>Listed on the team roster</span></div>
     <div>We did our best to publish only details in which we had a high degree of confidence. We are sure that inevitably there are errors. Please help us improve this database. Where you see <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="addl">+ add</a>, we do not have a confirmed answer yet. If you know a player's club or travel team, previous school or hometown, tell us and we will check it against a source. A dash means a detail we do not collect or have not confirmed.</div>
     <div>Leagues and tournament information: <a href="https://sites.google.com/view/ibauc" target="_blank" rel="noopener">IBAUC</a> and the <a href="./teams.html">Teams page</a>.</div>
-    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 32</a>. Last revised Oct 29, 2026.</div>
+    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 33</a>. Last revised Oct 29, 2026.</div>
   </div>
 </main>
 <script>
@@ -165,7 +165,7 @@ DATA.forEach(r=>{r.Home=home(r);r.Last=r.Player.trim().split(/\s+/).slice(-1)[0]
 const teams=[...new Set(DATA.map(r=>r.Team))].sort();
 teams.forEach(t=>{const o=document.createElement("option");o.value=t;o.textContent=t;$("team").appendChild(o)});
 const distinct=k=>new Set(DATA.map(r=>(r[k]||"").trim()).filter(Boolean)).size;
-$("stats").innerHTML=[[DATA.length,"players"],[teams.length,"programs"],[distinct("Home"),"hometowns"],[distinct("Club Team"),"clubs listed"]].map(([n,l])=>`<span><b>${n}</b>${l}</span>`).join("");
+$("stats").innerHTML=[[DATA.length,"players"],[teams.length,"programs"],[distinct("Home"),"hometowns"],[new Set(DATA.flatMap(r=>(r["Club Team"]||"").split(/\s*;\s*/).map(s=>s.trim().toLowerCase()).filter(Boolean))).size,"clubs listed"]].map(([n,l])=>`<span><b>${n}</b>${l}</span>`).join("");
 $("head").innerHTML=COLS.map(([k,l,c])=>`<div data-k="${k}" ${c==="j"?'style="text-align:right"':''}>${k==="Status"?"":`<button type="button" class="hd">${l}</button>`}</div>`).join("");
 const skey=k=>k==="Hometown"?"Home":k;
 $("head").addEventListener("click",e=>{const d=e.target.closest("[data-k]");if(!d||d.dataset.k==="Status")return;const k=d.dataset.k;sort=sort.k===k?{k,d:-sort.d}:{k,d:1};render()});
@@ -194,7 +194,7 @@ function render(){
   if(!rows.length)h=`<div class="none">No players match. Try fewer letters or clear a filter.</div>`;
   else if($("grp").value&&$("grp").value!=="Team"){
     const gk=$("grp").value,by={},lab={};
-    rows.forEach(r=>{const v=(r[gk]||"").trim();const key=v?v.toLowerCase():"";if(v&&!lab[key])lab[key]=v;(by[key]=by[key]||[]).push(r)});
+    rows.forEach(r=>{(gk==="Club Team"?(a=>{const m=lc?a.filter(v=>v.toLowerCase().includes(lc)):[];return m.length?m:a})((r[gk]||"").split(/\s*;\s*/)):[r[gk]||""]).forEach(v0=>{const v=v0.trim();const key=v?v.toLowerCase():"";if(v&&!lab[key])lab[key]=v;(by[key]=by[key]||[]).push(r)})});
     const keys=Object.keys(by).filter(x=>x&&by[x].length>1).sort((x,y)=>by[y].length-by[x].length||lab[x].localeCompare(lab[y]));
     const one=Object.keys(by).filter(x=>x&&by[x].length===1).sort((x,y)=>lab[x].localeCompare(lab[y]));
     h=keys.map(x=>`<div class="grp"><h2>${esc(lab[x])}</h2><span>${by[x].length} players</span></div>`+by[x].map(r=>row(r,true)).join("")).join("");
