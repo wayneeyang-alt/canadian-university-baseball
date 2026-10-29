@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 43: October 29, 2026
+
+- Carleton: filled 148 blank cells (hometowns, provinces and states, years, schools, positions and clubs) from reviewed research and the university's 2026-27 eligibility certificate. No existing value changed.
+
 ## Version 42: October 29, 2026
 
 - Toronto: filled 15 blank cells (jersey numbers and one club) from reviewed research. No existing value changed.
