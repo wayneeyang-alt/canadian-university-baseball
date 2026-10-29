@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 31: October 29, 2026
+
+- New Teams page: 22 programs grouped by conference (ACBA, OUA East, OUA West, Quebec), with team sites, roster pages and links to each team's players, plus IBAUC, CNUC and the ACBA. Players and Teams tabs added to the header. Social accounts, head coaches and logos will follow.
+
 ## Version 30: October 29, 2026
 
 - Added Brock (29 players) and Université de Montréal (14 players), for ten programs and 300 players.

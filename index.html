@@ -69,6 +69,9 @@ mark{background:var(--hl);color:inherit;padding:0 1px}
 @media(max-width:640px){.bar{position:static}}
 .fix{margin-left:8px;font:400 12.5px var(--body);white-space:nowrap;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)!important}
 
+nav.tabs .wrap{display:flex;gap:6px;padding-block:12px}
+nav.tabs a{font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:7px 14px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-color:var(--accent)}
 .spon{background:#f5b800;color:#1a1a1a}
 .spon .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 14px;padding-block:9px;font-size:14px;text-align:center}
 .spon b.t{font:700 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;background:#1a1a1a;color:#f5b800;padding:3px 8px;border-radius:2px}
@@ -103,6 +106,7 @@ mark{background:var(--hl);color:inherit;padding:0 1px}
   <div class="stats" id="stats"></div>
 </div></header>
 <div class="wrap"><div class="stitch"></div></div>
+<nav class="tabs" aria-label="Pages"><div class="wrap"><a href="./" aria-current="page">Players</a><a href="./teams.html">Teams</a></div></nav>
 <div class="bar"><div class="wrap">
   <input id="q" type="search" placeholder="Search player, hometown, school, club" aria-label="Search players" autocomplete="off">
   <select id="team" aria-label="Filter by program"><option value="">All programs</option></select>
@@ -119,7 +123,7 @@ mark{background:var(--hl);color:inherit;padding:0 1px}
   <div class="note">
     <div class="legend"><span><i class="dot g"></i>Named in a Fall 2026 game report</span><span><i class="dot"></i>Listed on the team roster</span></div>
     <div>We did our best to publish only details in which we had a high degree of confidence. We are sure that inevitably there are errors. Please help us improve this database. Where you see <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="addl">+ add</a>, we do not have a confirmed answer yet. If you know a player's club or travel team, previous school or hometown, tell us and we will check it against a source. A dash means a detail we do not collect or have not confirmed.</div>
-    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 30</a>. Last revised Oct 29, 2026.</div>
+    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 31</a>. Last revised Oct 29, 2026.</div>
   </div>
 </main>
 <script>
