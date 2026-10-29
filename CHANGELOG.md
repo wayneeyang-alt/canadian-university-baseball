@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 40: October 29, 2026
+
+- McGill: filled 7 blank cells (four clubs, one previous school, one hometown and province) from reviewed research. No existing value changed.
+
 ## Version 39: October 29, 2026
 
 - Queen's: filled 36 blank cells (positions, previous schools and clubs) from reviewed research. No existing value changed.
