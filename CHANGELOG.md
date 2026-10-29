@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 50: October 30, 2026
+
+- Added Acadia (24 players), STFX (20) and Holland College (18), from each team's own roster graphic and the ACBA's Fall 2026 game reports. Fields the sources do not print, such as jersey numbers for Acadia and STFX, are blank.
+
 ## Version 49: October 29, 2026
 
 - Teams and Clubs pages: official websites and Instagram, X, Facebook, YouTube and TikTok accounts for the programs and clubs where we could confirm them. Accounts that could not be confirmed are left off.
