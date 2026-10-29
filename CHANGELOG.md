@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 45: October 29, 2026
+
+- Added Dalhousie: 27 players from the team's own final-roster post and the ACBA's Fall 2026 game reports, with positions and hometowns where published. Dalhousie has no 2026-27 roster page yet, so jersey numbers and years are blank.
+
 ## Version 44: October 29, 2026
 
 - Clubs: the same club written several ways (Etobicoke Rangers, London Badgers, Markham Mariners and others) now shows and counts as one club. Age group, level and coach names are dropped from the club name; hover over a club to see the full original wording. Clubs listed: 131 became 110.
