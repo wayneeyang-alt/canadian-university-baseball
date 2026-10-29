@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 47: October 29, 2026
+
+- Added McMaster: 35 players from the team's own roster page and weekly game reports, with positions, years, hometowns and previous schools.
+
 ## Version 46: October 29, 2026
 
 - Added Guelph: 33 players from the team's own roster page, with positions, jersey numbers, hometowns and years, plus some previous schools and clubs.
