@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 51: October 30, 2026
+
+- Université de Montréal: added a previous school and a club for one player, from a suggestion sent through the form.
+
 ## Version 50: October 30, 2026
 
 - Added Acadia (24 players), STFX (20) and Holland College (18), from each team's own roster graphic and the ACBA's Fall 2026 game reports. Fields the sources do not print, such as jersey numbers for Acadia and STFX, are blank.
