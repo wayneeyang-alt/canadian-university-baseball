@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 37: October 29, 2026
+
+- Added Laurentian (25 players), from the program's own 2026-27 roster. Twelve programs, 364 players.
+
 ## Version 36: October 29, 2026
 
 - UNB: filled 30 blank cells (hometowns, provinces, schools, positions, one club) from reviewed research. No existing value changed.
