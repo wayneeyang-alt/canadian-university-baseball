@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 53: October 30, 2026
+
+- Teams page: added Ontario University Athletics (OUA) to Resources.
+
 ## Version 52: October 30, 2026
 
 - Added Ottawa (34 players), TMU (33) and York (37). Ottawa and York players come from each team's GameChanger page. TMU's are confirmed by the team's 2026-27 eligibility list. Positions, hometowns, previous schools and clubs come from team posts, team pages and recruiting profiles; where no source prints a field it is blank. Jersey numbers that two Ottawa players share are blank until the team confirms them.
