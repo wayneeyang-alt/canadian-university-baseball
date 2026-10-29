@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 48: October 29, 2026
+
+- Added Windsor: 26 players from the team's own roster page and game reports, with positions, jersey numbers, years, previous schools and clubs.
+
 ## Version 47: October 29, 2026
 
 - Added McMaster: 35 players from the team's own roster page and weekly game reports, with positions, years, hometowns and previous schools.
