@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 44: October 29, 2026
+
+- Clubs: the same club written several ways (Etobicoke Rangers, London Badgers, Markham Mariners and others) now shows and counts as one club. Age group, level and coach names are dropped from the club name; hover over a club to see the full original wording. Clubs listed: 131 became 110.
+
 ## Version 43: October 29, 2026
 
 - Carleton: filled 148 blank cells (hometowns, provinces and states, years, schools, positions and clubs) from reviewed research and the university's 2026-27 eligibility certificate. No existing value changed.

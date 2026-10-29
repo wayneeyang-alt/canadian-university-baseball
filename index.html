@@ -124,7 +124,7 @@ nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-co
     <div class="legend"><span><i class="dot g"></i>Named in a Fall 2026 game report</span><span><i class="dot"></i>Listed on the team roster</span></div>
     <div>We did our best to publish only details in which we had a high degree of confidence. We are sure that inevitably there are errors. Please help us improve this database. Where you see <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="addl">+ add</a>, we do not have a confirmed answer yet. If you know a player's club or travel team, previous school or hometown, tell us and we will check it against a source. A dash means a detail we do not collect or have not confirmed.</div>
     <div>Leagues and tournament information: <a href="https://sites.google.com/view/ibauc" target="_blank" rel="noopener">IBAUC</a> and the <a href="./teams.html">Teams page</a>.</div>
-    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 43</a>. Last revised Oct 29, 2026.</div>
+    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 44</a>. Last revised Oct 29, 2026.</div>
   </div>
 </main>
 <script>
@@ -150,6 +150,7 @@ function normSchool(s){return (s||"").trim()
   .replace(/\s+-\s+/g,"-").replace(/\s{2,}/g," ")}
 const SAME={"KCI":"KCI","Kitchener CI":"KCI","Kitchener Waterloo CI (KCI)":"KCI","WCI":"Waterloo CI","Holy Trinity":"Holy Trinity CSS","Michael Power":"Michael Power-St. Joseph HS","St. Joan of Arc CSS":"St. Joan of Arc CHS","St. Joan of Arc CSS Barrie":"St. Joan of Arc CHS"};
 const SPEC={"Ravin Yuvarajan":{"Holy Trinity CSS":"Holy Trinity CSS (location unconfirmed)"},"Jonathan Onderisin":{"St. Michael's College":"St. Michael's College School"}};
+const CLUBMAP={"Etobicoke Rangers Elite": "Etobicoke Rangers", "Markham Mariners Elite": "Markham Mariners", "Mississauga Majors U 18": "Mississauga Majors", "London Juniors 22U": "London Juniors", "Guelph Royals 18U Tier 1": "Guelph Royals", "Soo 18U Black Sox": "Soo Black Sox", "Etobicoke Rangers 18U Elite": "Etobicoke Rangers", "HPP Tigers 18u": "HPP Tigers", "Leaside Leafs Elite": "Leaside Leafs", "North York 17u Elite": "North York Elite", "North York Blues 16u Elite": "North York Blues", "Etobicoke Rangers U15 Elite": "Etobicoke Rangers", "Team Ontario Astros 17U": "Team Ontario Astros", "Etobicoke Rangers 18U McCallum": "Etobicoke Rangers", "Etobicoke Rangers 17u Elite": "Etobicoke Rangers", "Generals - Johnson 17U": "Generals - Johnson", "East York Elite": "East York", "West Toronto 18u Elite": "West Toronto Elite", "Oakville A's Elite 18U": "Oakville A's", "Milton Mets 18u Elite": "Milton Mets", "Cambridge Cubs 18U Elite": "Cambridge Cubs", "London Badgers 18U": "London Badgers", "Oakville A's AAA": "Oakville A's", "Marucci Prospects 17u Volpe": "Marucci Prospects", "Markham Mariners 18U Elite": "Markham Mariners", "North Toronto As 18U Elite": "North Toronto A's", "Barrie Baycats HP 18U": "Barrie Baycats", "Terriers Baseball Pollard": "Terriers Baseball", "Bullettproof Elite 18U": "Bullettproof Elite", "London Badgers U18": "London Badgers", "Cambridge Cubs Elite U18": "Cambridge Cubs"};
 DATA.forEach(r=>{
   r.Position=(r.Position||"").split("/").map(p=>PM[p.trim()]||p.trim()).join("/");
   r["Eligibility / Yr"]=normYr(r["Eligibility / Yr"]);
@@ -157,6 +158,7 @@ DATA.forEach(r=>{
   r["Previous School"]=normSchool(r["Previous School"]);
   r["Previous School"]=(SPEC[r.Player]&&SPEC[r.Player][r["Previous School"]])||SAME[r["Previous School"]]||r["Previous School"];
   if(r["Club Team"]==="Crush Baseball"||r["Club Team"]==="Team Crush")r["Club Team"]="Team Crush Baseball";
+  r.ClubRaw=r["Club Team"]||"";r["Club Team"]=r.ClubRaw.split(/\s*;\s*/).map(v=>v.trim()).filter(Boolean).map(v=>CLUBMAP[v]||v).filter((v,i,x)=>x.indexOf(v)===i).join("; ");
   r.Hometown=(r.Hometown||"").replace(/^[a-z]/,c=>c.toUpperCase());
   if(r.Team==="Laurier"&&r["Jersey #"]==="0")r["Jersey #"]="";
 });
@@ -173,7 +175,7 @@ $("head").addEventListener("click",e=>{const d=e.target.closest("[data-k]");if(!
 ["team","grp"].forEach(i=>$(i).addEventListener("change",render));
 document.querySelectorAll("a.addl,#corr").forEach(a=>{a.href=FORM;a.target="_blank";a.rel="noopener"});
 function row(r,showTeam){
-  const cell=(k,l,c)=>{const v=k==="Hometown"?r.Home:r[k];if(v)return `<div class="c" data-l="${l}">${hl(v)}</div>`;
+  const cell=(k,l,c)=>{const v=k==="Hometown"?r.Home:r[k];if(v)return `<div class="c" data-l="${l}"${k==="Club Team"&&r.ClubRaw&&r.ClubRaw!==v?` title="${esc(r.ClubRaw)}"`:""}>${hl(v)}</div>`;
     if(k==="Club Team"||k==="Previous School"||k==="Hometown")return `<div class="c add" data-l="${l}"><a href="${FORM}" target="_blank" rel="noopener" class="addl" title="Know this? Send us a correction">+ add</a></div>`;
     return `<div class="c blank"><span class="e">–</span></div>`};
   const pos=r.Position?` <small>${esc(r.Position.slice(0,12))}</small>`:"";
