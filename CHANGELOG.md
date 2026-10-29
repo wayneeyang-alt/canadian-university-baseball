@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 42: October 29, 2026
+
+- Toronto: filled 15 blank cells (jersey numbers and one club) from reviewed research. No existing value changed.
+
 ## Version 41: October 29, 2026
 
 - Laurier: filled 37 blank cells (mostly clubs, plus a few hometowns, schools, positions and years) from reviewed research.
