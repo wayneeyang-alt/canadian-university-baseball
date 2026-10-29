@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 49: October 29, 2026
+
+- Teams and Clubs pages: official websites and Instagram, X, Facebook, YouTube and TikTok accounts for the programs and clubs where we could confirm them. Accounts that could not be confirmed are left off.
+- Clubs: nine more name variants merged into one club each (Terriers, Midwestern Ontario Bearcats, Sudbury Voyageurs, Watson Elite, West Toronto, Whitby, UBC Thunder, Chatham Diamonds and Oshawa Legionnaires).
+
 ## Version 48: October 29, 2026
 
 - Added Windsor: 26 players from the team's own roster page and game reports, with positions, jersey numbers, years, previous schools and clubs.
