@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 34: October 29, 2026
+
+- Added Western's roster page link on the Teams page.
+
 ## Version 33: October 29, 2026
 
 - New Clubs page: 56 travel clubs, academies and programs, each with its player count, the universities its players are at, and a link to its players. Players with more than one club are counted under each. Grouping by club on the Players page now does the same.
