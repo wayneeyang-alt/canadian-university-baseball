@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 46: October 29, 2026
+
+- Added Guelph: 33 players from the team's own roster page, with positions, jersey numbers, hometowns and years, plus some previous schools and clubs.
+
 ## Version 45: October 29, 2026
 
 - Added Dalhousie: 27 players from the team's own final-roster post and the ACBA's Fall 2026 game reports, with positions and hometowns where published. Dalhousie has no 2026-27 roster page yet, so jersey numbers and years are blank.
