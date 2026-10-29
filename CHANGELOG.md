@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 41: October 29, 2026
+
+- Laurier: filled 37 blank cells (mostly clubs, plus a few hometowns, schools, positions and years) from reviewed research.
+- Waterloo: filled 27 blank club cells from reviewed research.
+- No existing value changed.
+
 ## Version 40: October 29, 2026
 
 - McGill: filled 7 blank cells (four clubs, one previous school, one hometown and province) from reviewed research. No existing value changed.
