@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 32: October 29, 2026
+
+- Renamed the Teams page's "Leagues and events" section to "Resources" and added an IBAUC and Teams-page line to the Players page footer.
+
 ## Version 31: October 29, 2026
 
 - New Teams page: 22 programs grouped by conference (ACBA, OUA East, OUA West, Quebec), with team sites, roster pages and links to each team's players, plus IBAUC, CNUC and the ACBA. Players and Teams tabs added to the header. Social accounts, head coaches and logos will follow.
