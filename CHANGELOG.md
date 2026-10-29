@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 39: October 29, 2026
+
+- Queen's: filled 36 blank cells (positions, previous schools and clubs) from reviewed research. No existing value changed.
+
 ## Version 38: October 29, 2026
 
 - UPEI: filled 20 blank cells (positions, hometowns, previous schools, one club and one jersey) from reviewed research. No existing value changed.
