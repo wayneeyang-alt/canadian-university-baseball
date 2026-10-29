@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 36: October 29, 2026
+
+- UNB: filled 30 blank cells (hometowns, provinces, schools, positions, one club) from reviewed research. No existing value changed.
+
 ## Version 35: October 29, 2026
 
 - Added Western (39 players), from the program's own 2026-27 roster page. Eleven programs, 339 players. The Clubs page now lists 76 clubs.
