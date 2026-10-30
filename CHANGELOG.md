@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 54: October 30, 2026
+
+- Clubs: Team Ontario Astros and Ontario Astros are one club and now appear as Team Ontario Astros. Three players listed with only "Team Ontario" are shown under it too, because their sources tie that name to the Astros. Hover over a club name to see what the source printed. The provincial Team Ontario is a different team and is not merged.
+
 ## Version 53: October 30, 2026
 
 - Teams page: added Ontario University Athletics (OUA) to Resources.
