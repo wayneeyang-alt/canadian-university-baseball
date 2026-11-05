@@ -6,6 +6,10 @@ Newest first. Each entry gives the version, the date and what changed. Suggestio
 
 - Queen's: added previous school and club team for two players, and a position and previous school for one, from suggestions that matched the team and hometown.
 
+## Version 56: November 5, 2026
+
+- Players page: a note says the page lists Fall 2026 rosters and that programs playing in other seasons appear on the Teams page.
+
 ## Version 55: November 3, 2026
 
 - Links to the site now show a title, description and image when shared, and a sitemap helps search engines find every page.
