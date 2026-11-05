@@ -86,5 +86,6 @@ ul.tg{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
 const f=document.getElementById("f"),c=document.getElementById("c"),L=[...document.querySelectorAll("#list li")];
 f.addEventListener("input",()=>{const q=f.value.trim().toLowerCase();let n=0;L.forEach(li=>{const s=!q||li.dataset.n.includes(q);li.hidden=!s;if(s)n++});c.textContent=n+(n===1?" club":" clubs")});
 </script>
+<script src="./share.js" defer></script>
 </body>
 </html>

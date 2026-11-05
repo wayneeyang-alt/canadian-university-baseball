@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 57: November 5, 2026
+
+- Share: every page has a Share button. On a phone it opens the share sheet. Elsewhere it offers Copy link, LinkedIn, X, Facebook and WhatsApp. Each team with a roster on the Teams page has a small share icon.
+
 ## Version 56: November 5, 2026
 
 - Queen's: added previous school and club team for two players, and a position and previous school for one, from suggestions that matched the team and hometown.
