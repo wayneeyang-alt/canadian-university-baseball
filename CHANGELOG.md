@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 56: November 5, 2026
+
+- Queen's: added previous school and club team for two players, and a position and previous school for one, from suggestions that matched the team and hometown.
+
 ## Version 55: November 3, 2026
 
 - Links to the site now show a title, description and image when shared, and a sitemap helps search engines find every page.
