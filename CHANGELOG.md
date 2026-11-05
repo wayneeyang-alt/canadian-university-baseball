@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 58: 2026-11-05
+
+- Teams page: a "Jump to" row under the tabs links to each section.
+
 ## Version 57: November 5, 2026
 
 - Share: every page has a Share button. On a phone it opens the share sheet. Elsewhere it offers Copy link, LinkedIn, X, Facebook and WhatsApp. Each team with a roster on the Teams page has a small share icon.
