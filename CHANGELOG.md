@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 60: 2026-11-06
+
+- Teams page: new CCBC group (6 college and university teams in the Canadian College Baseball Conference) and Cégeps section (8 teams in the RSEQ collégial league). Cards link each team's own site and its confirmed social accounts. No rosters for these teams.
+
 ## Version 59: 2026-11-06
 
 - Western: corrected the spelling of one player's name (McLean), per Western's own news page.
