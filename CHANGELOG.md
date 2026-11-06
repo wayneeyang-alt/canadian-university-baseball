@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 59: 2026-11-06
+
+- Western: corrected the spelling of one player's name (McLean), per Western's own news page.
+
 ## Version 58: 2026-11-05
 
 - Teams page: a "Jump to" row under the tabs links to each section.
