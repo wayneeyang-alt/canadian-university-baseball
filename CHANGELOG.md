@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 67: 2026-11-12
+
+- Spring Players: Okanagan College now shows full first names for all 47 players (they were first initials only in Version 66), plus positions for 46 of 47 and years for one. Names follow the team's own player profiles where they differ from GameChanger's spelling.
+
 ## Version 66: 2026-11-12
 
 - Spring Players: added Thompson Rivers University (29 players) and Okanagan College (47 players), for 220 players across five teams. TRU's roster was checked against the team's live roster page. Okanagan's roster comes from the team's GameChanger page, which lists first initials only, so those players show as, for example, A. Riar; full names will replace them as they are confirmed. The TRU and Okanagan cards on Spring Teams now link to their players, and the Clubs counts include the new players.
