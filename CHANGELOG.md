@@ -4,7 +4,7 @@ Newest first. Each entry gives the version, the date and what changed. Suggestio
 
 ## Version 68: 2026-11-12
 
-- Fall Players and Spring Players: each page keeps its own season counts and now shows a line with the combined total across both seasons (871 players on 27 teams: Fall 651, Spring 220).
+- Fall Players and Spring Players: each page keeps its own season counts and now shows a line with the combined total across both seasons (871 different players on 27 teams, with hometown and club totals across both seasons).
 
 ## Version 67: 2026-11-12
 
