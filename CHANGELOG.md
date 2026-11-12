@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 75: 2026-11-12
+
+- New Resources tab: IBAUC, CNUC, ACBA and OUA moved off the bottom of Fall Teams onto their own page, since they apply to both seasons. The tab sits after Clubs on every page.
+
 ## Version 74: 2026-11-12
 
 - Spring Players: Riley Burns's hometown corrected to Fort McMurray (the roster printed "Fort MacMurray"), and Jerry Beaton's Kelowna now shows BC.
