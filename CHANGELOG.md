@@ -4,7 +4,7 @@ Newest first. Each entry gives the version, the date and what changed. Suggestio
 
 ## Version 61: 2026-11-12
 
-- Teams split into two tabs: Fall Teams and Spring Teams. The Spring Teams page has the CCBC group and a new card for the UBC Thunderbirds (NAIA, Cascade Collegiate Conference).
+- Teams split into two tabs: Fall Teams and Spring Teams. The Spring Teams page has the CCBC group and a new card for the UBC Thunderbirds (NAIA, Cascade Collegiate Conference). The CCBC's second UBC team is now listed as UBC University Baseball Club.
 
 ## Version 60: 2026-11-06
 
