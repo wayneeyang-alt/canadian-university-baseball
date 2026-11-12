@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 78: 2026-11-12
+
+- Fall Players and Spring Players: the season box for the page you are on is now shaded with a heavier blue border and a "showing now" tag, so it is clear which season the counts below describe.
+
 ## Version 77: 2026-11-12
 
 - Roster submissions: added a no-account file upload (PDF, spreadsheet or screenshot) next to the roster form link on the Players pages and the Fall and Spring Teams pages.
