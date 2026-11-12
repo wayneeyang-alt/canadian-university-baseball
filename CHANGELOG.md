@@ -4,7 +4,7 @@ Newest first. Each entry gives the version, the date and what changed. Suggestio
 
 ## Version 84: 2026-11-12
 
-- Embed mode for Canadian Baseball Network: adding ?embed=cbn to the address of any page shows the credit line "Compiled by Wayne E. Yang" under the sponsor strip and keeps it as a visitor moves between pages. Normal visits are unchanged.
+- Embed mode for Canadian Baseball Network: adding ?embed=cbn to the address of any page shows the credit line "Compiled for Canadian Baseball Network by Wayne E. Yang" under the sponsor strip and keeps it as a visitor moves between pages. Normal visits are unchanged.
 
 ## Version 83: 2026-11-12
 

@@ -26,7 +26,7 @@
     var d = document.createElement("div");
     d.className = "cbn-credit";
     d.setAttribute("role", "note");
-    d.textContent = "Compiled by Wayne E. Yang";
+    d.textContent = "Compiled for Canadian Baseball Network by Wayne E. Yang";
     d.style.cssText = "background:var(--chip,#eef2f7);border-bottom:1px solid var(--line,#d3dae3);color:var(--fg,#13202f);font:500 13px var(--mono,monospace);letter-spacing:.06em;padding:8px 20px;text-align:center";
     var spon = document.querySelector(".spon");
     if (spon && spon.parentNode) spon.parentNode.insertBefore(d, spon.nextSibling);
