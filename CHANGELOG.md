@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 62: 2026-11-12
+
+- Spring Teams: all nine CCBC programs are now listed (added Edmonton Collegiate, Prairie Baseball Academy and Victoria Collegiate), plus a Northwest Athletic Conference section with Douglas College. Cards only, no rosters.
+
 ## Version 61: 2026-11-12
 
 - Teams split into two tabs: Fall Teams and Spring Teams. The Spring Teams page has the CCBC group and a new card for the UBC Thunderbirds (NAIA, Cascade Collegiate Conference). The CCBC's second UBC team is now listed as UBC University Baseball Club.
