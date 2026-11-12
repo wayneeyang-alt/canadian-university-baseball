@@ -14,7 +14,7 @@ raw = json.load(open(data_path, encoding='utf-8'))
 # data_path is the data repo's public/players.json; keep only this season's rows and reshape them
 # to the DATA rows the page expects.
 POS = {'Pitcher': 'P', 'Infielder': 'INF', 'Outfielder': 'OF', 'Catcher': 'C', 'Utility': 'UTL', 'IF': 'INF', 'Infield': 'INF', 'Outfield': 'OF'}
-TEAM = {'University of British Columbia': 'UBC Thunderbirds', 'University of the Fraser Valley': 'UFV'}
+TEAM = {'University of British Columbia': 'UBC Thunderbirds', 'University of the Fraser Valley': 'UFV', 'University of Calgary': 'Calgary Dinos'}
 def pos(v):
     return '/'.join(POS.get(x.strip(), x.strip()) for x in v.split('/')) if v else ''
 rows = [{'Team': TEAM.get(p['School'], p['School']), 'Player': (p['First Name'] + ' ' + p['Last Name']).strip(),

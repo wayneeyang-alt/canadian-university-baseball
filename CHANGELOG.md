@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 65: 2026-11-12
+
+- Spring Players: added the University of Calgary Dinos (55 players), for 144 players across UFV, UBC Thunderbirds and Calgary. The Calgary, UFV and Thunderbirds cards on Spring Teams now link to their players. The Clubs counts include the new players.
+
 ## Version 64: 2026-11-12
 
 - Clubs: the club list now counts players from both Fall 2026 and Spring 2026 rosters. Each club shows its combined total with the Fall and Spring split, and a link to its Spring players. Eight clubs that only Spring players list were added.
