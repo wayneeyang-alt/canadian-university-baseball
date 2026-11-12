@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 76: 2026-11-12
+
+- Roster submissions: a new Submit a roster form is linked from the Players pages, the Fall and Spring Teams notes, and from every team card that has no player list yet ("Send us a roster").
+
 ## Version 75: 2026-11-12
 
 - New Resources tab: IBAUC, CNUC, ACBA and OUA moved off the bottom of Fall Teams onto their own page, since they apply to both seasons. The tab sits after Clubs on every page.
