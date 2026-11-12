@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 80: 2026-11-12
+
+- Resources: added Canadian Baseball Network, with its website, Instagram, Facebook and X links.
+
 ## Version 79: 2026-11-12
 
 - Spring Players: second-source name check on Prairie, Edmonton Collegiate and Okanagan (105 recovered first names; 92 confirmed by an independent source). Three spellings corrected to the best-supported form: Aidan Maxwell and Emmett Barry (Okanagan) and Kallan Taylor-Gagne (Edmonton). Shea Koller and Logan Heaney now show as seen in a game. Zach Willard stays #34, confirmed by a game recap.
