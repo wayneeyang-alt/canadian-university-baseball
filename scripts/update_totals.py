@@ -7,8 +7,9 @@ per season with that season's own counts. The current page's row is marked aria-
  - different players: unique normalized names in the master list (players.json)
  - teams, hometowns: from the data each Players page shows (scripts/page_stats.js runs the pages in jsdom)
  - clubs: the cards on clubs.html (data-f / data-s), so the numbers agree with the Clubs page
+Also sets the footer line "Version N. Last revised <date>." (the Version N link) from the newest entry in CHANGELOG.md.
 Run it after regenerating either page or clubs.html."""
-import json, re, os, sys, subprocess
+import json, re, os, sys, subprocess, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 master = json.load(open(sys.argv[1], encoding='utf-8'))
 key = lambda p: re.sub(r'[^a-z ]', '', (p['First Name'] + ' ' + p['Last Name']).lower()).strip()
@@ -27,6 +28,9 @@ def row(name, href, s, clubs, cur):
     c = ' aria-current="page"' if cur else ''
     return (f'<a href="{href}"{c}><b>{name}</b>{s["players"]} players · {len(s["teams"])} teams · '
             f'{len(s["homes"])} hometowns · {clubs} clubs</a>')
+ver = re.search(r'## Version (\d+): (\d{4})-(\d\d)-(\d\d)', open(os.path.join(ROOT, 'CHANGELOG.md'), encoding='utf-8').read())
+d = datetime.date(int(ver.group(2)), int(ver.group(3)), int(ver.group(4)))
+footer = f'>Version {ver.group(1)}</a>. Last revised {d.strftime("%b")} {d.day}, {d.year}.'
 for f, cur in (('index.html', 'fall'), ('spring-players.html', 'spring')):
     p = os.path.join(ROOT, f)
     s = open(p, encoding='utf-8').read()
@@ -35,5 +39,6 @@ for f, cur in (('index.html', 'fall'), ('spring-players.html', 'spring')):
              + row('Spring 2026', './spring-players.html', spring, cl_s, cur == 'spring') + '</nav><!--/tot-->')
     s2 = re.sub(r'<!--tot-->.*?<!--/tot-->', lambda m: block, s, count=1, flags=re.S)
     assert s2 != s or block in s, 'totals block not found in ' + f
+    s2 = re.sub(r'>Version \d+</a>\. Last revised [A-Za-z]{3} \d+, \d{4}\.', footer, s2)
     open(p, 'w', encoding='utf-8').write(s2)
 print(f'grand: {players} players, {teams} teams, {homes} hometowns, {cl_all} clubs | Fall {fall["players"]}/{len(fall["teams"])}/{len(fall["homes"])}/{cl_f} | Spring {spring["players"]}/{len(spring["teams"])}/{len(spring["homes"])}/{cl_s}')
