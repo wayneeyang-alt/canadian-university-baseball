@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 73: 2026-11-12
+
+- Spring Players: provinces and states now use the same two-letter codes as Fall Players (AB, BC, MB, ON, SK, MN), where the source rosters had forms such as "Alta." and "B.C.". Countries stay spelled out (Japan, UAE). Merging the duplicate spellings of the same hometowns brings the grand total to 205 hometowns.
+
 ## Version 72: 2026-11-12
 
 - Spring Players: added Prairie Baseball Academy (30 players) and Edmonton Collegiate Hawks (38 players) for Spring 2026, from their GameChanger rosters with first names confirmed from team and league sources. Two Prairie players and one Edmonton player are listed by first initial only. The grand total is now 939 players across 29 teams.

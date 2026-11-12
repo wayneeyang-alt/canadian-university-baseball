@@ -122,7 +122,7 @@ nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-co
     <div class="kicker">Canadian college and university teams</div>
     <h1>Canadian University<br>Baseball Players</h1>
   </div>
-  <!--tot--><div class="stats" id="stats"><span><b>939</b>players</span><span><b>29</b>teams</span><span><b>223</b>hometowns</span><span><b>152</b>clubs</span></div><nav class="seasons" id="seasons" aria-label="Seasons"><a href="./" aria-current="page"><b>Fall 2026</b>651 players · 22 teams · 171 hometowns · 120 clubs</a><a href="./spring-players.html"><b>Spring 2026</b>288 players · 7 teams · 56 hometowns · 43 clubs</a></nav><!--/tot-->
+  <!--tot--><div class="stats" id="stats"><span><b>939</b>players</span><span><b>29</b>teams</span><span><b>205</b>hometowns</span><span><b>152</b>clubs</span></div><nav class="seasons" id="seasons" aria-label="Seasons"><a href="./" aria-current="page"><b>Fall 2026</b>651 players · 22 teams · 171 hometowns · 120 clubs</a><a href="./spring-players.html"><b>Spring 2026</b>288 players · 7 teams · 48 hometowns · 43 clubs</a></nav><!--/tot-->
 </div></header>
 <div class="wrap"><div class="stitch"></div></div>
 <nav class="tabs" aria-label="Pages"><div class="wrap"><a href="./" aria-current="page">Fall Players</a><a href="./spring-players.html">Spring Players</a><a href="./teams.html">Fall Teams</a><a href="./spring.html">Spring Teams</a><a href="./clubs.html">Clubs</a></div></nav>
@@ -144,7 +144,7 @@ nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-co
     <div>This page lists Fall 2026 rosters. Spring rosters are on the <a href="./spring-players.html">Spring Players</a> page.</div>
     <div>We did our best to publish only details in which we had a high degree of confidence. We are sure that inevitably there are errors. Please help us improve this database. Where you see <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="addl">+ add</a>, we do not have a confirmed answer yet. If you know a player's club or travel team, previous school or hometown, tell us and we will check it against a source. A dash means a detail we do not collect or have not confirmed.</div>
     <div>Leagues and tournament information: <a href="https://sites.google.com/view/ibauc" target="_blank" rel="noopener">IBAUC</a> and the <a href="./teams.html">Fall Teams</a> and <a href="./spring.html">Spring Teams</a> pages.</div>
-    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 72</a>. Last revised Nov 12, 2026.</div>
+    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 73</a>. Last revised Nov 12, 2026.</div>
   </div>
 </main>
 <script>
@@ -156,7 +156,7 @@ let sort={k:"Player",d:1},term="";
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function hl(s){s=esc(s||"");if(!term)return s;const t=esc(term).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");return s.replace(new RegExp("("+t+")","ig"),"<mark>$1</mark>")}
 const PM={"Pitcher":"P","Infielder":"INF","Infield":"INF","IF":"INF","Outfielder":"OF","Outfield":"OF","Catcher":"C","Shortstop":"SS","Second Base":"2B","First Base":"1B","Utility":"UT","UTIL":"UT"};
-const PR={"Ontario":"ON","British Columbia":"BC"};
+const PR={"Ontario":"ON","British Columbia":"BC","Alberta":"AB","Saskatchewan":"SK","Manitoba":"MB","Quebec":"QC","Nova Scotia":"NS","New Brunswick":"NB","Prince Edward Island":"PE","Newfoundland and Labrador":"NL","Ont.":"ON","B.C.":"BC","Alta.":"AB","Sask.":"SK","Man.":"MB","Que.":"QC","N.S.":"NS","N.B.":"NB","P.E.I.":"PE","Minn., USA":"MN","U.A.E.":"UAE"};
 const ORD={"first":"1","second":"2","third":"3","fourth":"4","fifth":"5","sixth":"6"};
 function normYr(v){if(!v)return"";let m=v.match(/^(\d)$/);if(m)return"Elig "+m[1];m=v.match(/^(\w+) Year$/i);return m&&ORD[m[1].toLowerCase()]?ORD[m[1].toLowerCase()]+({1:"st",2:"nd",3:"rd"}[ORD[m[1].toLowerCase()]]||"th")+" yr":v}
 function normSchool(s){return (s||"").trim()
