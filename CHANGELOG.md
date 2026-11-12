@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 68: 2026-11-12
+
+- Fall Players and Spring Players: each page keeps its own season counts and now shows a line with the combined total across both seasons (871 players on 27 teams: Fall 651, Spring 220).
+
 ## Version 67: 2026-11-12
 
 - Spring Players: Okanagan College now shows full first names for all 47 players (they were first initials only in Version 66), plus positions for 46 of 47 and years for one. Names follow the team's own player profiles where they differ from GameChanger's spelling.

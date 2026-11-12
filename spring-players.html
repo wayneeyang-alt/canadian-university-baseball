@@ -37,6 +37,7 @@ header.mast .wrap{padding-block:26px 14px;display:flex;flex-wrap:wrap;gap:10px 4
 h1{font:800 clamp(34px,6vw,60px)/.92 var(--display);letter-spacing:.01em;text-transform:uppercase;margin:0;color:var(--accent);text-wrap:balance}
 .kicker{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .stats{display:flex;flex-wrap:wrap;gap:6px 26px;font:400 13px var(--mono);color:var(--muted)}
+.all{font:400 13px var(--mono);color:var(--muted);margin:10px 0 0}.all b{color:var(--fg)}
 .stats b{font:800 28px/1 var(--display);color:var(--fg);margin-right:5px;font-variant-numeric:tabular-nums}
 .stitch{height:7px;border-block:2px dashed var(--stitch);opacity:.85;margin-block:4px 0}
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
@@ -117,7 +118,7 @@ nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-co
     <div class="kicker">Spring 2026 · Canadian college and university teams</div>
     <h1>Canadian University<br>Baseball Players</h1>
   </div>
-  <div class="stats" id="stats"></div>
+  <div class="stats" id="stats"></div><p class="all" id="all">All rosters, Fall 2026 and Spring 2026: <b>871</b> players on <b>27</b> teams (Fall 651, Spring 220).</p>
 </div></header>
 <div class="wrap"><div class="stitch"></div></div>
 <nav class="tabs" aria-label="Pages"><div class="wrap"><a href="./">Fall Players</a><a href="./spring-players.html" aria-current="page">Spring Players</a><a href="./teams.html">Fall Teams</a><a href="./spring.html">Spring Teams</a><a href="./clubs.html">Clubs</a></div></nav>
