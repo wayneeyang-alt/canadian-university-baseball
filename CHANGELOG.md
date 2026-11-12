@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 71: 2026-11-12
+
+- Fall Players and Spring Players: the top of both pages now shows the grand totals across both seasons (871 players, 27 teams, 223 hometowns, 152 clubs), with a row for each season underneath showing that season's own counts. The current season is highlighted and the other links to its page. Season club counts now match the Clubs page. Fixed one more Oshawa Legionaires row that still carried the old spelling.
+
 ## Version 70: 2026-11-12
 
 - Clubs: merged spelling and naming variants of four clubs: North Toronto A's (was also listed as North Toronto A's Elite, North Toronto Athletics and North Toronto Elite), Great Lake Canadians (was also Great Lakes Canadians), Oshawa Legionaires (was also Oshawa Legionnaires; the club spells it this way) and High Park Junior Baseball Club (was also High Park Jr. and High Park Junior Baseball). The Clubs page now lists 152 clubs.
