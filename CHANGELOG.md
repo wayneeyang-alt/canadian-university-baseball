@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 82: 2026-11-12
+
+- Added the credit line "Compiled by Wayne E. Yang" under the main heading on every page, at the request of Canadian Baseball Network.
+
 ## Version 81: 2026-11-12
 
 - Every page now has a banner under the tabs, "Coach or player? Help us add or complete your team's roster", with a red Submit a roster button and an upload-a-file link.
