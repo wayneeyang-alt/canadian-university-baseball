@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 83: 2026-11-12
+
+- Removed the "Compiled by Wayne E. Yang" line from the page headings for now. It is intended to appear only on a Canadian Baseball Network embed.
+
 ## Version 82: 2026-11-12
 
 - Added the credit line "Compiled by Wayne E. Yang" under the main heading on every page, at the request of Canadian Baseball Network.
