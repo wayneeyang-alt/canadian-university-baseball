@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 64: 2026-11-12
+
+- Clubs: the club list now counts players from both Fall 2026 and Spring 2026 rosters. Each club shows its combined total with the Fall and Spring split, and a link to its Spring players. Eight clubs that only Spring players list were added.
+
 ## Version 63: 2026-11-12
 
 - Players is now split into Fall Players and Spring Players. Spring Players opens with Spring 2026 rosters for UFV (50 players) and the UBC Thunderbirds (39 players). Spring rosters come from each team's own site, and each was checked against Spring 2026 game coverage before it went in. More Spring 2026 rosters will follow.
