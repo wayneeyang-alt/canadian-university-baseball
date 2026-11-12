@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 77: 2026-11-12
+
+- Roster submissions: added a no-account file upload (PDF, spreadsheet or screenshot) next to the roster form link on the Players pages and the Fall and Spring Teams pages.
+
 ## Version 76: 2026-11-12
 
 - Roster submissions: a new Submit a roster form is linked from the Players pages, the Fall and Spring Teams notes, and from every team card that has no player list yet ("Send us a roster").
