@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 69: 2026-11-12
+
+- Clubs: the Bullettproof variants (Bullet Proof Baseball, Bullettproof Elite, Bullettproof Elite 18U) are now one club, Bullettproof Baseball Club (Welland, ON), with its 2 players. The Clubs page now lists 159 clubs.
+
 ## Version 68: 2026-11-12
 
 - Fall Players and Spring Players: each page keeps its own season counts and now shows a line with the combined total across both seasons (871 different players on 27 teams, with hometown and club totals across both seasons).
