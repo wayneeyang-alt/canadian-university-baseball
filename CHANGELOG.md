@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 72: 2026-11-12
+
+- Spring Players: added Prairie Baseball Academy (30 players) and Edmonton Collegiate Hawks (38 players) for Spring 2026, from their GameChanger rosters with first names confirmed from team and league sources. Two Prairie players and one Edmonton player are listed by first initial only. The grand total is now 939 players across 29 teams.
+
 ## Version 71: 2026-11-12
 
 - Fall Players and Spring Players: the top of both pages now shows the grand totals across both seasons (871 players, 27 teams, 223 hometowns, 152 clubs), with a row for each season underneath showing that season's own counts. The current season is highlighted and the other links to its page. Season club counts now match the Clubs page. Fixed one more Oshawa Legionaires row that still carried the old spelling.
