@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 79: 2026-11-12
+
+- Spring Players: second-source name check on Prairie, Edmonton Collegiate and Okanagan (105 recovered first names; 92 confirmed by an independent source). Three spellings corrected to the best-supported form: Aidan Maxwell and Emmett Barry (Okanagan) and Kallan Taylor-Gagne (Edmonton). Shea Koller and Logan Heaney now show as seen in a game. Zach Willard stays #34, confirmed by a game recap.
+
 ## Version 78: 2026-11-12
 
 - Fall Players and Spring Players: the season box for the page you are on is now shaded with a heavier blue border and a "showing now" tag, so it is clear which season the counts below describe.
