@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 61: 2026-11-12
+
+- Teams split into two tabs: Fall Teams and Spring Teams. The Spring Teams page has the CCBC group and a new card for the UBC Thunderbirds (NAIA, Cascade Collegiate Conference).
+
 ## Version 60: 2026-11-06
 
 - Teams page: new CCBC group (6 college and university teams in the Canadian College Baseball Conference) and Cégeps section (8 teams in the RSEQ collégial league). Cards link each team's own site and its confirmed social accounts. No rosters for these teams.
