@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Who plays university baseball in Canada: Spring 2026 rosters for 2 college and university teams, with hometowns, previous schools and club teams.">
+<link rel="canonical" href="https://wayneeyang-alt.github.io/canadian-university-baseball/spring-players.html">
+<meta name="google-site-verification" content="F7S8pvHFCzfQh2HOyFC2ob2y6Tah_dkcry7r6Kab20k" />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Canadian University Baseball Database">
+<meta property="og:title" content="Canadian University Baseball Database">
+<meta property="og:description" content="Who plays university baseball in Canada: Spring 2026 rosters for 2 college and university teams, with hometowns, previous schools and club teams.">
+<meta property="og:url" content="https://wayneeyang-alt.github.io/canadian-university-baseball/spring-players.html">
+<meta property="og:image" content="https://wayneeyang-alt.github.io/canadian-university-baseball/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Canadian University Baseball Database">
+<meta name="twitter:description" content="Who plays university baseball in Canada: Spring 2026 rosters for 2 college and university teams, with hometowns, previous schools and club teams.">
+<meta name="twitter:image" content="https://wayneeyang-alt.github.io/canadian-university-baseball/og.png">
+<style>:root{color-scheme:light}body{margin:0;font-size:14px}[hidden]{display:none!important}</style>
+<title>Canadian University Baseball Spring Players</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lineup-card ledger. Players grouped by program, one dense line per player, headers repeat only once. */
+:root{
+  --bg:#edf0f4; --surface:#ffffff; --fg:#13202f; --muted:#59687a; --line:#d3dae3;
+  --accent:#1b3a63; --stitch:#b8322c; --chip:#e3e9f1; --hl:#ffe98a;
+  --display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif; --body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e141c;--surface:#151d28;--fg:#e5ebf3;--muted:#8d9bb0;--line:#263243;--accent:#8db4ee;--stitch:#e8625b;--chip:#1e2937;--hl:#6a5a12;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e141c;--surface:#151d28;--fg:#e5ebf3;--muted:#8d9bb0;--line:#263243;--accent:#8db4ee;--stitch:#e8625b;--chip:#1e2937;--hl:#6a5a12;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.4 var(--body);margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+header.mast .wrap{padding-block:26px 14px;display:flex;flex-wrap:wrap;gap:10px 40px;align-items:end;justify-content:space-between}
+h1{font:800 clamp(34px,6vw,60px)/.92 var(--display);letter-spacing:.01em;text-transform:uppercase;margin:0;color:var(--accent);text-wrap:balance}
+.kicker{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.stats{display:flex;flex-wrap:wrap;gap:6px 26px;font:400 13px var(--mono);color:var(--muted)}
+.stats b{font:800 28px/1 var(--display);color:var(--fg);margin-right:5px;font-variant-numeric:tabular-nums}
+.stitch{height:7px;border-block:2px dashed var(--stitch);opacity:.85;margin-block:4px 0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:8px 10px;padding-block:10px;align-items:center}
+.bar input[type=search]{flex:1 1 280px}
+.bar select{flex:0 1 190px}
+input,select{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:8px 10px;min-width:0}
+label.chk{display:flex;gap:6px;align-items:center;font-size:13.5px;white-space:nowrap;cursor:pointer;color:var(--fg)}
+label.chk input{width:16px;height:16px;padding:0;accent-color:var(--accent)}
+.count{font:400 12.5px var(--mono);color:var(--muted);margin-left:auto;white-space:nowrap}
+input:focus-visible,select:focus-visible,.hd:focus-visible,label.chk input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);margin-block:14px;overflow-x:auto}
+.cols,.row{display:grid;grid-template-columns:42px minmax(150px,1.35fr) 92px 100px minmax(120px,1.15fr) minmax(150px,1.5fr) minmax(130px,1.2fr) 22px;gap:0 12px;align-items:baseline;padding:6px 12px;min-width:960px}
+.cols{position:sticky;left:0;border-bottom:2px solid var(--fg);font:500 11px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding-block:0}
+.hd{all:unset;cursor:pointer;padding:9px 0;display:block}
+.hd:hover{color:var(--fg)}
+.cols [aria-sort=ascending] .hd::after{content:" ▲";font-size:8px}
+.cols [aria-sort=descending] .hd::after{content:" ▼";font-size:8px}
+.grp{display:flex;align-items:baseline;gap:10px;padding:8px 12px 6px;background:var(--chip);border-block:1px solid var(--line);min-width:960px}
+.grp h2{font:800 22px/1 var(--display);letter-spacing:.03em;text-transform:uppercase;margin:0;color:var(--accent)}
+.grp span{font:400 12px var(--mono);color:var(--muted)}
+.row{border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--chip)}
+.j{font:500 13px var(--mono);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.n{font-weight:600}
+.n small{font:400 11px var(--mono);letter-spacing:.05em;color:var(--muted);margin-left:6px;text-transform:uppercase}
+.e{color:var(--line)}
+.dot{width:10px;height:10px;border-radius:50%;border:2px solid var(--accent);align-self:center;justify-self:center}
+.dot.g{background:var(--accent)}
+mark{background:var(--hl);color:inherit;padding:0 1px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:13px;color:var(--muted);align-items:center}
+.legend i{display:inline-block;vertical-align:-1px;margin-right:5px}
+.note{font-size:13.5px;color:var(--muted);max-width:84ch;padding-block:2px 36px;display:grid;gap:8px}
+.note a{color:var(--accent)}
+.none{padding:32px 16px;text-align:center;color:var(--muted)}
+.addl:not(.btn):not(.fix){font-size:12.5px;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+.addl:not(.btn):not(.fix):hover{border-bottom-style:solid}
+.btn{font-size:14px;font-weight:600;color:var(--bg);background:var(--accent);padding:8px 14px;border-radius:3px;border:0;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+.btn2{font:600 14px var(--sans,inherit);color:var(--accent);background:transparent;border:1px solid var(--accent);padding:7px 12px;border-radius:3px;cursor:pointer}
+.btn2:hover{background:var(--accent);color:var(--bg)}
+@media(max-width:640px){.bar{position:static}}
+.fix{margin-left:8px;font:400 12.5px var(--body);white-space:nowrap;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)!important}
+
+nav.tabs .wrap{display:flex;gap:6px;padding-block:12px}
+nav.tabs a{font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:7px 14px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+nav.tabs a[aria-current=page]{color:var(--bg);background:var(--accent);border-color:var(--accent)}
+.spon{background:#f5b800;color:#1a1a1a}
+.spon .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 14px;padding-block:9px;font-size:14px;text-align:center}
+.spon b.t{font:700 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;background:#1a1a1a;color:#f5b800;padding:3px 8px;border-radius:2px}
+.spon a{color:#1a1a1a;font-weight:700;text-decoration:none;border-bottom:2px solid #1a1a1a;white-space:nowrap}
+.spon a:hover{border-bottom-style:dotted}
+.fix:hover{border-bottom-style:solid!important}
+.missing{padding:7px 12px;font-size:13px;color:var(--muted);border-bottom:1px solid var(--line)}
+.vlink{color:var(--accent)}
+.mo{display:none}
+@media (max-width:820px){
+  .cols{display:none}
+  .card{overflow:visible}
+  .grp{min-width:0}
+  .row{min-width:0;grid-template-columns:34px 1fr 18px;gap:1px 10px;padding:9px 12px}
+  .row .n{grid-column:2}
+  .row .dot{grid-column:3;grid-row:1}
+  .row .j{grid-row:1}
+  .row .c{grid-column:2/4;font-size:13.5px}
+  .row .c:empty,.row .c.blank{display:none}
+  .row .c::before{content:attr(data-l) " ";font:400 10.5px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .mo{display:inline}
+}
+</style>
+</head>
+<body>
+<div class="spon" role="complementary" aria-label="Sponsorship"><div class="wrap"><b class="t">Sponsor this page</b><span>Your brand could go here. Reach players, families and coaches across Canadian university baseball.</span><a href="https://docs.google.com/forms/d/e/1FAIpQLScLdPo4d5Dn92P5ziu8cvap-gemq2yEwEzcgtpeiDc_POQZMw/viewform" target="_blank" rel="noopener">Get in touch &rarr;</a></div></div>
+<header class="mast"><div class="wrap">
+  <div>
+    <div class="kicker">Spring 2026 · Canadian college and university teams</div>
+    <h1>Canadian University<br>Baseball Players</h1>
+  </div>
+  <div class="stats" id="stats"></div>
+</div></header>
+<div class="wrap"><div class="stitch"></div></div>
+<nav class="tabs" aria-label="Pages"><div class="wrap"><a href="./">Fall Players</a><a href="./spring-players.html" aria-current="page">Spring Players</a><a href="./teams.html">Fall Teams</a><a href="./spring.html">Spring Teams</a><a href="./clubs.html">Clubs</a></div></nav>
+<div class="bar"><div class="wrap">
+  <input id="q" type="search" placeholder="Search player, hometown, school, club" aria-label="Search players" autocomplete="off">
+  <select id="team" aria-label="Filter by program"><option value="">All programs</option></select>
+  <select id="grp" aria-label="Group players by"><option value="Team">Group by program</option><option value="Home">Group by hometown</option><option value="Previous School">Group by previous school</option><option value="Club Team">Group by club team</option><option value="">No grouping</option></select>
+  <div class="count" id="count" aria-live="polite"></div>
+  <button type="button" id="share" class="btn2">Share</button>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="btn addl">Suggest a change</a>
+</div></div>
+<main class="wrap">
+  <div class="card" id="card">
+    <div class="cols" id="head"></div>
+    <div id="body"></div>
+  </div>
+  <div class="note">
+    <div class="legend"><span><i class="dot g"></i>Named in a Spring 2026 game report</span><span><i class="dot"></i>Listed on the team roster</span></div>
+    <div>This page lists Spring 2026 rosters (March to May). Fall rosters are on the <a href="./">Fall Players</a> page.</div>
+    <div>We did our best to publish only details in which we had a high degree of confidence. We are sure that inevitably there are errors. Please help us improve this database. Where you see <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" class="addl">+ add</a>, we do not have a confirmed answer yet. If you know a player's club or travel team, previous school or hometown, tell us and we will check it against a source. A dash means a detail we do not collect or have not confirmed.</div>
+    <div>Leagues and tournament information: <a href="https://sites.google.com/view/ibauc" target="_blank" rel="noopener">IBAUC</a> and the <a href="./teams.html">Fall Teams</a> and <a href="./spring.html">Spring Teams</a> pages.</div>
+    <div>Use "Suggest a change" to fix a name or detail, add a missing player, or report someone who is not on a team. Corrections, additions and other changes are welcome through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform" target="_blank" rel="noopener" id="corr">suggestion form</a>. Compiled with AI assistance from public team and league sources. <a href="https://github.com/wayneeyang-alt/canadian-university-baseball/blob/main/CHANGELOG.md" target="_blank" rel="noopener" class="vlink">Version 60</a>. Last revised Nov 6, 2026.</div>
+  </div>
+</main>
+<script>
+const FORM="https://docs.google.com/forms/d/e/1FAIpQLSflc7SPFBAABnSiEy55IyBpPkryMfCuYGXWKfaDm0RenYWdmA/viewform";
+const DATA=[{"Team": "UBC Thunderbirds", "Player": "Lou Fujiwara", "Status": "Confirmed in game", "Position": "INF", "Jersey #": "", "Hometown": "Tokyo", "Province / State / Country": "Japan", "Previous School": "Orange Coast College", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Sam Byers", "Status": "On team roster", "Position": "C", "Jersey #": "2", "Hometown": "Ottawa", "Province / State / Country": "Ont.", "Previous School": "", "Club Team": "Watson Elite", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Josh Cote", "Status": "Confirmed in game", "Position": "C/INF", "Jersey #": "", "Hometown": "Midland", "Province / State / Country": "Ont.", "Previous School": "University of Toledo", "Club Team": "", "Eligibility / Yr": "4th"}, {"Team": "UBC Thunderbirds", "Player": "Jaden Lamothe", "Status": "On team roster", "Position": "INF", "Jersey #": "4", "Hometown": "Langley", "Province / State / Country": "B.C.", "Previous School": "Parkland Community College", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Kaden Douglas-Pluff", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "North Vancouver", "Province / State / Country": "B.C.", "Previous School": "Okanagan College", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Oliver Clements", "Status": "On team roster", "Position": "INF", "Jersey #": "6", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "Vancouver College", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Ryan Stephian", "Status": "On team roster", "Position": "OF", "Jersey #": "", "Hometown": "Hamilton", "Province / State / Country": "Ont.", "Previous School": "Sherwood Secondary", "Club Team": "Great Lakes Canadians", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Oliver Duthie", "Status": "On team roster", "Position": "P", "Jersey #": "8", "Hometown": "Dubai", "Province / State / Country": "U.A.E.", "Previous School": "Dubai College", "Club Team": "Dubai Dodgers", "Eligibility / Yr": "4th"}, {"Team": "UBC Thunderbirds", "Player": "Matt Vrlak", "Status": "Confirmed in game", "Position": "INF", "Jersey #": "", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "West Point Grey Academy", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Otis Pritchett", "Status": "On team roster", "Position": "P", "Jersey #": "10", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Kenny Scott", "Status": "On team roster", "Position": "C", "Jersey #": "11", "Hometown": "Delta", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "Delta Blue Jays", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Kellen Bourne", "Status": "Confirmed in game", "Position": "OF", "Jersey #": "12", "Hometown": "Calgary", "Province / State / Country": "Alta.", "Previous School": "", "Club Team": "Marrucci Elite", "Eligibility / Yr": "4th"}, {"Team": "UBC Thunderbirds", "Player": "Matt Vanslyke", "Status": "On team roster", "Position": "INF", "Jersey #": "", "Hometown": "Whitby", "Province / State / Country": "Ont.", "Previous School": "Mineral Area College", "Club Team": "Toronto Mets", "Eligibility / Yr": "2nd"}, {"Team": "UBC Thunderbirds", "Player": "Finley McConnell", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "Delta", "Province / State / Country": "B.C.", "Previous School": "South Delta Secondary", "Club Team": "Delta Blue Jays", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Braeden Scott", "Status": "Confirmed in game", "Position": "INF", "Jersey #": "", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "Vancouver College", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Kyle Yip", "Status": "Confirmed in game", "Position": "C/OF", "Jersey #": "17", "Hometown": "Calgary", "Province / State / Country": "Alta.", "Previous School": "", "Club Team": "Vauxhall Jets", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Jordan Stewart", "Status": "On team roster", "Position": "C/OF", "Jersey #": "18", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Dylan Myttenar", "Status": "On team roster", "Position": "P", "Jersey #": "20", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Daniel Orfaly", "Status": "On team roster", "Position": "P", "Jersey #": "21", "Hometown": "White Rock", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "White Rock Tritons", "Eligibility / Yr": "4th"}, {"Team": "UBC Thunderbirds", "Player": "Myles Chamberlain", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "Victoria", "Province / State / Country": "B.C.", "Previous School": "Cloud County Community College", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Calvin Warrillow", "Status": "On team roster", "Position": "OF", "Jersey #": "", "Hometown": "Toronto", "Province / State / Country": "Ont.", "Previous School": "Dodge City Community College", "Club Team": "Toronto Mets", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Ian Roberts", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "Burlington", "Province / State / Country": "Ont.", "Previous School": "Corpus Christi Catholic Secondary", "Club Team": "Fieldhouse Pirates", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Stephen Waters", "Status": "On team roster", "Position": "C/UTL", "Jersey #": "26", "Hometown": "Toronto", "Province / State / Country": "Ont.", "Previous School": "", "Club Team": "Ontario Blue Jays", "Eligibility / Yr": "2nd"}, {"Team": "UBC Thunderbirds", "Player": "Marcus Janovsky", "Status": "On team roster", "Position": "P", "Jersey #": "28", "Hometown": "Surrey", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "Okotoks Dawgs", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Owen McConnell", "Status": "On team roster", "Position": "P", "Jersey #": "29", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "2nd"}, {"Team": "UBC Thunderbirds", "Player": "Scotty Langley", "Status": "On team roster", "Position": "P", "Jersey #": "30", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Linden Happell", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "Maple Ridge", "Province / State / Country": "B.C.", "Previous School": "Maple Ridge High School", "Club Team": "Whalley Chiefs", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Dylan Nerlich", "Status": "On team roster", "Position": "C/OF", "Jersey #": "", "Hometown": "Toronto", "Province / State / Country": "Ont.", "Previous School": "St. Michael's College", "Club Team": "Ontario Terriers", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Will Anderson", "Status": "On team roster", "Position": "P", "Jersey #": "33", "Hometown": "Delta", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "Delta Blue Jays", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "David Krahn", "Status": "Confirmed in game", "Position": "INF", "Jersey #": "34", "Hometown": "Langley", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "Abbotsford Cardinals", "Eligibility / Yr": "2nd"}, {"Team": "UBC Thunderbirds", "Player": "Lukas Kaufmann", "Status": "Confirmed in game", "Position": "P", "Jersey #": "", "Hometown": "Regina", "Province / State / Country": "Sask.", "Previous School": "Martin Academy", "Club Team": "Regina Athletics", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Lucas Huynh", "Status": "On team roster", "Position": "P", "Jersey #": "36", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "2nd"}, {"Team": "UBC Thunderbirds", "Player": "Armaan Drar", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "North Vancouver", "Province / State / Country": "B.C.", "Previous School": "Southwestern Oregon Community College", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Kansai Sugimoto", "Status": "Confirmed in game", "Position": "P", "Jersey #": "41", "Hometown": "Kyoto", "Province / State / Country": "Japan", "Previous School": "Yavapai College", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Jackson Boomer", "Status": "On team roster", "Position": "OF", "Jersey #": "43", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "UBC Thunder", "Eligibility / Yr": "3rd"}, {"Team": "UBC Thunderbirds", "Player": "Liam Hamel", "Status": "On team roster", "Position": "OF", "Jersey #": "", "Hometown": "Burlington", "Province / State / Country": "Ont.", "Previous School": "Hillfield Strathallan College", "Club Team": "Fieldhouse Pirates", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Mason Chien", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "Langley", "Province / State / Country": "B.C.", "Previous School": "UFV Cascades", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "Oscar Moy", "Status": "On team roster", "Position": "P", "Jersey #": "", "Hometown": "Vancouver", "Province / State / Country": "B.C.", "Previous School": "Kitsilano Secondary", "Club Team": "UBC Thunder", "Eligibility / Yr": "1st"}, {"Team": "UBC Thunderbirds", "Player": "James Brock", "Status": "Confirmed in game", "Position": "P", "Jersey #": "48", "Hometown": "Burnaby", "Province / State / Country": "B.C.", "Previous School": "", "Club Team": "North Shore Twins", "Eligibility / Yr": "4th"}, {"Team": "UFV", "Player": "Chase Martin", "Status": "On team roster", "Position": "OF/P", "Jersey #": "1", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Nate James", "Status": "Confirmed in game", "Position": "INF", "Jersey #": "2", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Brody Davis", "Status": "On team roster", "Position": "INF", "Jersey #": "3", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Kyle Pierce", "Status": "On team roster", "Position": "RHP/INF", "Jersey #": "5", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "William Marshall", "Status": "On team roster", "Position": "RHP", "Jersey #": "6", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Damon Golz", "Status": "On team roster", "Position": "INF", "Jersey #": "7", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Brady Dorwart", "Status": "Confirmed in game", "Position": "OF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Memphis Pearce", "Status": "On team roster", "Position": "INF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Landon Jupp", "Status": "On team roster", "Position": "INF", "Jersey #": "10", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Eli McKeen", "Status": "On team roster", "Position": "INF/P", "Jersey #": "11", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Noah Farnden", "Status": "On team roster", "Position": "OF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Adam Stewart", "Status": "On team roster", "Position": "INF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Logan McNamara", "Status": "On team roster", "Position": "RHP", "Jersey #": "16", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Jaxon Mosher", "Status": "On team roster", "Position": "RHP", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Jayson Tamayo", "Status": "On team roster", "Position": "OF/RHP", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Tyson Nickel", "Status": "On team roster", "Position": "RHP", "Jersey #": "18", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Nicholas Cleland", "Status": "On team roster", "Position": "INF", "Jersey #": "20", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Wyatt McKeen", "Status": "Confirmed in game", "Position": "OF/LHP", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Matthew Picheniuk", "Status": "Confirmed in game", "Position": "RHP", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Bradley Rae", "Status": "On team roster", "Position": "OF", "Jersey #": "24", "Hometown": "Chilliwack", "Province / State / Country": "BC", "Previous School": "Sardis Secondary", "Club Team": "Township Blue Sox", "Eligibility / Yr": "4th"}, {"Team": "UFV", "Player": "Tyson Christie", "Status": "On team roster", "Position": "INF/OF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Carson Janzen", "Status": "On team roster", "Position": "LHP", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Matthew Shanley", "Status": "On team roster", "Position": "RHP", "Jersey #": "26", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Kensuke Nakane", "Status": "On team roster", "Position": "OF/P", "Jersey #": "28", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Tai Freeman", "Status": "On team roster", "Position": "LHP", "Jersey #": "29", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Cole McGregor", "Status": "On team roster", "Position": "RHP", "Jersey #": "30", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Avery Saxon", "Status": "On team roster", "Position": "RHP", "Jersey #": "31", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Rhett Forbes", "Status": "On team roster", "Position": "C", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Brady Merritt", "Status": "On team roster", "Position": "INF/P", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Carson Chan", "Status": "On team roster", "Position": "OF", "Jersey #": "33", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Ryan Connell", "Status": "On team roster", "Position": "1B/RHP", "Jersey #": "34", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Everett Guselle", "Status": "On team roster", "Position": "OF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Jordan Lisowsky", "Status": "On team roster", "Position": "INF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Devin Pennington", "Status": "On team roster", "Position": "C", "Jersey #": "36", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Carter Moffat", "Status": "On team roster", "Position": "INF", "Jersey #": "37", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Kam Sparrowhawk", "Status": "On team roster", "Position": "RHP", "Jersey #": "39", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Chas Oehlerking", "Status": "On team roster", "Position": "C/1B", "Jersey #": "40", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Carson Burns", "Status": "On team roster", "Position": "RHP", "Jersey #": "41", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Ryder Corsi", "Status": "On team roster", "Position": "INF", "Jersey #": "43", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Graham Stack", "Status": "On team roster", "Position": "RHP", "Jersey #": "44", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Cale Klebanosky", "Status": "On team roster", "Position": "RHP", "Jersey #": "45", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Ian Bell", "Status": "On team roster", "Position": "RHP", "Jersey #": "48", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Yuchiro Kusinoki", "Status": "On team roster", "Position": "RHP", "Jersey #": "49", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Ryan Post", "Status": "On team roster", "Position": "OF/P", "Jersey #": "52", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "2nd"}, {"Team": "UFV", "Player": "Shaymus Dunton", "Status": "On team roster", "Position": "OF/RHP", "Jersey #": "54", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Keegan Drinkle", "Status": "Confirmed in game", "Position": "C/1B", "Jersey #": "55", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Daxton Vanderkooi", "Status": "On team roster", "Position": "RHP", "Jersey #": "56", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "3rd"}, {"Team": "UFV", "Player": "Devin Wood", "Status": "On team roster", "Position": "RHP", "Jersey #": "62", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Joel Davidson", "Status": "On team roster", "Position": "RHP", "Jersey #": "66", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}, {"Team": "UFV", "Player": "Logan Rodgers", "Status": "On team roster", "Position": "INF", "Jersey #": "", "Hometown": "", "Province / State / Country": "", "Previous School": "", "Club Team": "", "Eligibility / Yr": "1st"}];
+const COLS=[["Jersey #","#","j"],["Player","Player","n"],["Position","Position","c"],["Eligibility / Yr","Year / elig.","c"],["Hometown","Hometown","c"],["Previous School","Previous school","c"],["Club Team","Club / prev. team","c"],["Status","",""]];
+const $=id=>document.getElementById(id);
+let sort={k:"Player",d:1},term="";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function hl(s){s=esc(s||"");if(!term)return s;const t=esc(term).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");return s.replace(new RegExp("("+t+")","ig"),"<mark>$1</mark>")}
+const PM={"Pitcher":"P","Infielder":"INF","Infield":"INF","IF":"INF","Outfielder":"OF","Outfield":"OF","Catcher":"C","Shortstop":"SS","Second Base":"2B","First Base":"1B","Utility":"UT","UTIL":"UT"};
+const PR={"Ontario":"ON","British Columbia":"BC"};
+const ORD={"first":"1","second":"2","third":"3","fourth":"4","fifth":"5","sixth":"6"};
+function normYr(v){if(!v)return"";let m=v.match(/^(\d)$/);if(m)return"Elig "+m[1];m=v.match(/^(\w+) Year$/i);return m&&ORD[m[1].toLowerCase()]?ORD[m[1].toLowerCase()]+({1:"st",2:"nd",3:"rd"}[ORD[m[1].toLowerCase()]]||"th")+" yr":v}
+function normSchool(s){return (s||"").trim()
+  .replace(/^ST\.?\s+/i,"St. ")
+  .replace(/(?<![A-Za-z]\.)\bH\.S\.?(?=\s|$)/g,"HS").replace(/\bHigh School\b/g,"HS")
+  .replace(/\bC\.S\.S\.?/g,"CSS").replace(/\bC\.H\.S\.?/g,"CHS").replace(/\bC\.I\.?/g,"CI")
+  .replace(/\bS\.S\.?(?=\s|$)/g,"SS")
+  .replace(/\bCatholic Secondary(?: School)?\b/g,"CSS").replace(/\bCollegiate Institute\b/g,"CI")
+  .replace(/\bSecondary School\b/g,"SS").replace(/\bSecondary$/,"SS")
+  .replace(/\bDistrict (?:SS|Secondary School)\b/g,"DSS")
+  .replace(/\s+-\s+/g,"-").replace(/\s{2,}/g," ")}
+const SAME={"KCI":"KCI","Kitchener CI":"KCI","Kitchener Waterloo CI (KCI)":"KCI","WCI":"Waterloo CI","Holy Trinity":"Holy Trinity CSS","Michael Power/St. Joseph":"Michael Power-St. Joseph HS","Michael Power":"Michael Power-St. Joseph HS","St. Joan of Arc CSS":"St. Joan of Arc CHS","St. Joan of Arc CSS Barrie":"St. Joan of Arc CHS"};
+const SPEC={"Ravin Yuvarajan":{"Holy Trinity CSS":"Holy Trinity CSS (location unconfirmed)"},"Jonathan Onderisin":{"St. Michael's College":"St. Michael's College School"}};
+const CLUBMAP={"Etobicoke Rangers Elite": "Etobicoke Rangers", "Markham Mariners Elite": "Markham Mariners", "Mississauga Majors U 18": "Mississauga Majors", "London Juniors 22U": "London Juniors", "Guelph Royals 18U Tier 1": "Guelph Royals", "Soo 18U Black Sox": "Soo Black Sox", "Etobicoke Rangers 18U Elite": "Etobicoke Rangers", "HPP Tigers 18u": "HPP Tigers", "Leaside Leafs Elite": "Leaside Leafs", "North York 17u Elite": "North York Elite", "North York Blues 16u Elite": "North York Blues", "Etobicoke Rangers U15 Elite": "Etobicoke Rangers", "Team Ontario Astros 17U": "Team Ontario Astros", "Etobicoke Rangers 18U McCallum": "Etobicoke Rangers", "Etobicoke Rangers 17u Elite": "Etobicoke Rangers", "Generals - Johnson 17U": "Generals - Johnson", "East York Elite": "East York", "West Toronto 18u Elite": "West Toronto Elite", "Oakville A's Elite 18U": "Oakville A's", "Milton Mets 18u Elite": "Milton Mets", "Cambridge Cubs 18U Elite": "Cambridge Cubs", "London Badgers 18U": "London Badgers", "Oakville A's AAA": "Oakville A's", "Marucci Prospects 17u Volpe": "Marucci Prospects", "Markham Mariners 18U Elite": "Markham Mariners", "North Toronto As 18U Elite": "North Toronto A's", "Barrie Baycats HP 18U": "Barrie Baycats", "Terriers Baseball Pollard": "Terriers Baseball", "Bullettproof Elite 18U": "Bullettproof Elite", "London Badgers U18": "London Badgers", "Cambridge Cubs Elite U18": "Cambridge Cubs", "Terriers Baseball": "Ontario Terriers", "Midwestern ON Bearcats": "Midwestern Ontario Bearcats", "Midwestern Ontario BearCats": "Midwestern Ontario Bearcats", "Sudbury Voyageurs / Baseball Academy": "Sudbury Voyageurs", "Tanner Watson Elite": "Watson Elite", "West Toronto Wildcats": "West Toronto Elite", "Whitby Chiefs": "Whitby Canadians", "UBC Junior Thunder": "UBC Thunder", "Chatham Diamonds 22U": "Chatham Diamonds", "Oshawa Legionaires Elite": "Oshawa Legionnaires", "Ontario Astros": "Team Ontario Astros"};
+DATA.forEach(r=>{
+  r.Position=(r.Position||"").split("/").map(p=>PM[p.trim()]||p.trim()).join("/");
+  r["Eligibility / Yr"]=normYr(r["Eligibility / Yr"]);
+  r["Province / State / Country"]=PR[r["Province / State / Country"]]||r["Province / State / Country"];
+  r["Previous School"]=normSchool(r["Previous School"]);
+  r["Previous School"]=(SPEC[r.Player]&&SPEC[r.Player][r["Previous School"]])||SAME[r["Previous School"]]||r["Previous School"];
+  if(r["Club Team"]==="Crush Baseball"||r["Club Team"]==="Team Crush")r["Club Team"]="Team Crush Baseball";
+  r.ClubRaw=r["Club Team"]||"";r["Club Team"]=(r.ClubAs||r.ClubRaw).split(/\s*;\s*/).map(v=>v.trim()).filter(Boolean).map(v=>CLUBMAP[v]||v).filter((v,i,x)=>x.indexOf(v)===i).join("; ");
+  r.Hometown=(r.Hometown||"").replace(/^[a-z]/,c=>c.toUpperCase());
+  if(r.Team==="Laurier"&&r["Jersey #"]==="0")r["Jersey #"]="";
+});
+const home=r=>[r.Hometown,r["Province / State / Country"]].filter(Boolean).join(", ");
+DATA.forEach(r=>{r.Home=home(r);r.Last=r.Player.trim().split(/\s+/).slice(-1)[0]});
+const teams=[...new Set(DATA.map(r=>r.Team))].sort();
+teams.forEach(t=>{const o=document.createElement("option");o.value=t;o.textContent=t;$("team").appendChild(o)});
+const distinct=k=>new Set(DATA.map(r=>(r[k]||"").trim()).filter(Boolean)).size;
+$("stats").innerHTML=[[DATA.length,"players"],[teams.length,"programs"],[distinct("Home"),"hometowns"],[new Set(DATA.flatMap(r=>(r["Club Team"]||"").split(/\s*;\s*/).map(s=>s.trim().toLowerCase()).filter(Boolean))).size,"clubs listed"]].map(([n,l])=>`<span><b>${n}</b>${l}</span>`).join("");
+$("head").innerHTML=COLS.map(([k,l,c])=>`<div data-k="${k}" ${c==="j"?'style="text-align:right"':''}>${k==="Status"?"":`<button type="button" class="hd">${l}</button>`}</div>`).join("");
+const skey=k=>k==="Hometown"?"Home":k;
+$("head").addEventListener("click",e=>{const d=e.target.closest("[data-k]");if(!d||d.dataset.k==="Status")return;const k=d.dataset.k;sort=sort.k===k?{k,d:-sort.d}:{k,d:1};render()});
+["q"].forEach(()=>$("q").addEventListener("input",e=>{term=e.target.value.trim();render()}));
+["team","grp"].forEach(i=>$(i).addEventListener("change",render));
+document.querySelectorAll("a.addl,#corr").forEach(a=>{a.href=FORM;a.target="_blank";a.rel="noopener"});
+function row(r,showTeam){
+  const cell=(k,l,c)=>{const v=k==="Hometown"?r.Home:r[k];if(v)return `<div class="c" data-l="${l}"${k==="Club Team"&&r.ClubRaw&&r.ClubRaw!==v?` title="${esc(r.ClubRaw)}"`:""}>${hl(v)}</div>`;
+    if(k==="Club Team"||k==="Previous School"||k==="Hometown")return `<div class="c add" data-l="${l}"><a href="${FORM}" target="_blank" rel="noopener" class="addl" title="Know this? Send us a correction">+ add</a></div>`;
+    return `<div class="c blank"><span class="e">–</span></div>`};
+  const pos=r.Position?` <small>${esc(r.Position.slice(0,12))}</small>`:"";
+  return `<div class="row"><div class="j">${r["Jersey #"]?esc(r["Jersey #"]):'<span class="e">–</span>'}</div>
+  <div class="n">${hl(r.Player)}${showTeam?` <small>${esc(r.Team)}</small>`:""}<a href="${FORM}" target="_blank" rel="noopener" class="addl fix" title="Suggest a fix for ${esc(r.Player)}" aria-label="Suggest a fix for ${esc(r.Player)}">suggest fix</a></div>
+  ${cell("Position","Pos")}${cell("Eligibility / Yr","Year / elig.")}${cell("Hometown","From")}${cell("Previous School","Prev")}${cell("Club Team","Club / prev")}
+  <div class="dot ${r.Status==="Confirmed in game"?"g":""}" title="${esc(r.Status)}"></div></div>`}
+function render(){
+  const lc=term.toLowerCase(),team=$("team").value;
+  let rows=DATA.filter(r=>(!team||r.Team===team)&&(!lc||[r.Player,r.Home,r["Previous School"],r["Club Team"],r.Position,r.Team].some(v=>(v||"").toLowerCase().includes(lc))));
+  const k=skey(sort.k),num=sort.k==="Jersey #";
+  const cmp=(a,b)=>{let x=a[k]||"",y=b[k]||"";if(!x&&y)return 1;if(x&&!y)return -1;
+    const c=num?(parseInt(x)||0)-(parseInt(y)||0):x.localeCompare(y,"en",{sensitivity:"base"});return c*sort.d||a.Player.localeCompare(b.Player)};
+  rows.sort(cmp);
+  document.querySelectorAll("#head [data-k]").forEach(th=>th.setAttribute("aria-sort",th.dataset.k===sort.k?(sort.d>0?"ascending":"descending"):"none"));
+  $("count").textContent=rows.length+" of "+DATA.length;
+  let h="";
+  if(!rows.length)h=`<div class="none">No players match. Try fewer letters or clear a filter.</div>`;
+  else if($("grp").value&&$("grp").value!=="Team"){
+    const gk=$("grp").value,by={},lab={};
+    rows.forEach(r=>{(gk==="Club Team"?(a=>{const m=lc?a.filter(v=>v.toLowerCase().includes(lc)):[];return m.length?m:a})((r[gk]||"").split(/\s*;\s*/)):[r[gk]||""]).forEach(v0=>{const v=v0.trim();const key=v?v.toLowerCase():"";if(v&&!lab[key])lab[key]=v;(by[key]=by[key]||[]).push(r)})});
+    const keys=Object.keys(by).filter(x=>x&&by[x].length>1).sort((x,y)=>by[y].length-by[x].length||lab[x].localeCompare(lab[y]));
+    const one=Object.keys(by).filter(x=>x&&by[x].length===1).sort((x,y)=>lab[x].localeCompare(lab[y]));
+    h=keys.map(x=>`<div class="grp"><h2>${esc(lab[x])}</h2><span>${by[x].length} players</span></div>`+by[x].map(r=>row(r,true)).join("")).join("");
+    const rest=[].concat(...one.map(x=>by[x]));
+    if(rest.length)h+=`<div class="grp"><h2>Only one player listed</h2><span>${rest.length} ${rest.length===1?"player":"players"}</span></div>`+rest.map(r=>row(r,true)).join("");
+    if(by[""])h+=`<div class="grp"><h2>Not listed yet</h2><span>${by[""].length} ${by[""].length===1?"player":"players"}</span></div><div class="missing">Know one of these? Use + add on a row or <a href="${FORM}" target="_blank" rel="noopener" class="addl">suggest a change</a>.</div>`;
+  } else if($("grp").value==="Team"){
+    const by={};rows.forEach(r=>(by[r.Team]=by[r.Team]||[]).push(r));
+    h=Object.keys(by).sort().map(t=>`<div class="grp"><h2>${esc(t)}</h2><span>${by[t].length} ${by[t].length===1?"player":"players"}</span></div>`+by[t].map(r=>row(r,false)).join("")+`<div class="missing">Missing a ${esc(t)} player? <a href="${FORM}" target="_blank" rel="noopener" class="addl">+ add a player</a></div>`).join("");
+  } else h=rows.map(r=>row(r,true)).join("");
+  $("body").innerHTML=h;
+  syncURL();
+}
+
+(function(){
+  const P=new URLSearchParams(location.search);
+  if(P.get("q")){$("q").value=P.get("q");term=P.get("q").trim()}
+  if(P.get("team")&&teams.includes(P.get("team")))$("team").value=P.get("team");
+  if(P.has("group")&&[...$("grp").options].some(o=>o.value===P.get("group")))$("grp").value=P.get("group");
+  if(P.get("sort")&&COLS.some(c=>c[0]===P.get("sort")))sort={k:P.get("sort"),d:P.get("dir")==="desc"?-1:1};
+})();
+function viewURL(){const p=new URLSearchParams();if(term)p.set("q",term);if($("team").value)p.set("team",$("team").value);
+  if($("grp").value!=="Team")p.set("group",$("grp").value);if(sort.k!=="Player"||sort.d<0){p.set("sort",sort.k);if(sort.d<0)p.set("dir","desc")}
+  const s=p.toString();return location.origin+location.pathname+(s?"?"+s:"")}
+function syncURL(){try{history.replaceState(null,"",viewURL())}catch(e){}}
+$("share").setAttribute("data-share","");$("share").setAttribute("aria-haspopup","menu");
+$("share").addEventListener("click",()=>{if(window.shareMenu)window.shareMenu($("share"),viewURL(),document.title)});
+render();
+</script>
+
+<script src="./share.js" defer></script>
+</body></html>
