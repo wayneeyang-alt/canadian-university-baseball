@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 74: 2026-11-12
+
+- Spring Players: Riley Burns's hometown corrected to Fort McMurray (the roster printed "Fort MacMurray"), and Jerry Beaton's Kelowna now shows BC.
+
 ## Version 73: 2026-11-12
 
 - Spring Players: provinces and states now use the same two-letter codes as Fall Players (AB, BC, MB, ON, SK, MN), where the source rosters had forms such as "Alta." and "B.C.". Countries stay spelled out (Japan, UAE). Merging the duplicate spellings of the same hometowns brings the grand total to 205 hometowns.
