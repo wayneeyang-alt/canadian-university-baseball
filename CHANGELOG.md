@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the version, the date and what changed. Suggestions from the form are checked against a source before they are applied.
 
+## Version 85: 2026-11-13
+
+- Canadian Baseball Network embed: the "Sponsor this page" strip is now hidden on pages opened with ?embed=cbn, at CBN's request. The credit line "Compiled for Canadian Baseball Network by Wayne E. Yang" is now the top strip there. Normal visits are unchanged.
+
 ## Version 84: 2026-11-12
 
 - Embed mode for Canadian Baseball Network: adding ?embed=cbn to the address of any page shows the credit line "Compiled for Canadian Baseball Network by Wayne E. Yang" under the sponsor strip and keeps it as a visitor moves between pages. Normal visits are unchanged.

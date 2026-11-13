@@ -7,6 +7,11 @@
   try { P = new URLSearchParams(location.search); } catch (e) { return; }
   if (P.get("embed") !== "cbn") return;
 
+  // Inside the CBN embed the sponsor strip is hidden; the credit line below takes its place at the top.
+  var st = document.createElement("style");
+  st.textContent = ".spon{display:none!important}";
+  (document.head || document.documentElement).appendChild(st);
+
   var rs = history.replaceState;
   history.replaceState = function (s, t, u) {
     try {
